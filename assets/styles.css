@@ -493,6 +493,10 @@ footer a, p{
         margin-top: 0.625rem;
         width: 100%;
     }
+    
+     input#submit{
+        border: none;
+    }
 
     .depoimento-flex{
         width: 80%;
