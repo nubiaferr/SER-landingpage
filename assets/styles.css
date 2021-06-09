@@ -1,0 +1,528 @@
+:root{
+    --white: #FFFFFF;
+    --black: black;
+    --purple: #9F5F80;
+    --dark-purple: #583D72;
+    --pink: #FF8474;
+    --light-pink: #FFC996;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Work+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Work Sans', sans-serif; */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+h2, h3, h1{
+    font-family: 'Work Sans', sans-serif; 
+    font-weight: 800;
+    text-align: center;
+}
+
+h1{
+    font-size: 3.125rem;
+    padding-top: 4.375rem;
+    padding-bottom: 0.625rem;
+    color: var(--purple);
+}
+
+p{
+    font-family: 'Work Sans', sans-serif; 
+}
+
+.background{
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+    top: -4.375rem;
+}
+
+.barra{
+    width: 100%;
+    height: 6.25rem;
+    z-index: -5;
+    background-color: var(--purple);
+    position: relative;
+}
+
+#header-mobile{
+    display: none;
+}
+
+/* Menu */
+#nav-bar{
+    background-color: var(--white);
+    width: 100%;
+    height: 3.125rem;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    box-shadow: 0rem 0rem 0.5rem -0.1875rem var(--purple);
+    z-index: 1;
+}
+
+#nav-bar ul{
+    margin-top: 0.3125rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    height: 2.5rem;
+}
+
+ul li a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif; 
+    color: var(--purple);
+}
+
+ul li a:hover{
+    color: var(--dark-purple);
+}
+
+
+#header-img{
+    width: 3.125rem;
+    height: auto;
+    margin-left: 6.25rem;
+}
+
+
+.button li:hover{
+    background-color: var(--purple);
+    width: 6.875rem;
+    height: 2.5rem;
+    border: 0.125rem solid var(--purple);
+    border-radius: 4%;
+    box-shadow: 0rem 0rem 0.625rem -0.1875rem var(--dark-purple);
+    text-align: center;
+    line-height: 2.1;
+}
+
+.button li a:hover{
+    color: white;
+}
+
+
+/* Jumbotron */
+section #jumbotron{
+    height: 1vh;
+}
+
+.jumbotron-pic{
+    display: relative;
+    text-align: center;
+}
+
+#jumbo-pic{
+    width: 85%;
+    padding-top: 5rem;
+    margin: 0 auto;
+}
+
+#jumbo-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 65%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.jumbo-logo{
+    width: 18.75rem;
+    height: 31.25rem;
+}
+
+#jumbo-logo h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 7.5rem;
+    color: var(--pink);
+    padding-top: 0rem;
+}
+
+.frase-jumbo{
+    padding: 2.5rem 0rem 1.25rem 0rem;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5625rem;
+    font-weight: 600;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--dark-purple);
+}
+
+
+/* Programas */
+
+#programas h1{
+    margin: 0rem 0rem 3.75rem 0rem;
+    padding: 0;
+}
+
+.barra{
+    top: 21.875rem;
+}
+
+.flex-programas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.programas{
+    width: 18.75rem;
+    height: 21.875rem;
+    text-align: justify;
+    background-color: var(--white);
+    border: 0.0625rem solid var(--dark-purple);
+}
+
+.programas img{
+    width: 100%;
+    height: 12.5rem;
+}
+
+.programas h3{
+    color: var(--dark-purple);
+    margin: 0.9375rem 0rem 0.3125rem 0rem;
+}
+
+.programas p{
+    margin: 0rem 1.25rem 0rem 1.25rem;
+    font-size: 0.9375rem;
+}
+
+/* Video */
+
+#como-funciona h1{
+    color: var(--purple);
+}
+
+.video{
+    position: relative;
+    top: -3.125rem;
+    text-align: center;
+}
+
+iframe{
+    width: 41.25rem;
+    height: 25.9375rem;
+}
+
+#como-funciona .barra{
+    position: relative;
+    top: 15.625rem;
+}
+
+/* Inscreva-se */
+.signup-header{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.signup-header h3{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5625rem;
+    font-weight: 600;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--dark-purple);
+}
+
+
+fieldset{
+    width: 80%;
+    padding: 4rem;
+    border: 0.0625rem solid var(--dark-purple);
+    background-color: var(--white);
+    margin: 0 auto;
+    
+}
+
+fieldset h2{
+    color: var(--dark-purple);
+}
+
+.form{
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.form-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5625rem;
+}
+
+input{
+    margin-top: 1.5625rem;
+    width: 100%;
+    height: 2.5rem;
+    border: 0.0625rem solid var(--purple);
+}
+
+
+input:focus{
+    outline: 0.0625rem solid var(--purple);
+    box-shadow: 0rem 0rem 0.5rem -0.1875rem var(--purple);
+}
+
+input#submit{
+    background-color: var(--pink);
+    color: var(--white);
+    width: 9.375rem;
+    height: 2.5rem;
+    border: 0.125rem solid var(--pink);
+    border-radius: 4%;
+    box-shadow: 0rem 0rem 0.625rem -0.1875rem var(--dark-purple);
+    text-align: center;
+    line-height: 2.1;
+}
+
+input#submit:hover{
+    background-color: var(--dark-purple);
+    border: 0.125rem solid var(--dark-purple);
+    color: var(--white);
+}
+
+::placeholder{
+    padding: 0.625rem;
+}
+
+/* Depoimento */
+
+.depoimento-flex{
+    width: 60%;
+    height: 15.625rem;
+    background-color: var(--light-pink);
+    display: flex;
+    margin: 0 auto;
+}
+
+.depoimento-flex img{
+    width: auto;
+    height: 15.625rem;
+    filter: grayscale();
+}
+
+.depoimento-flex h3{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5625rem;
+    font-weight: 600;
+    padding: 2.5rem;
+    align-self: center;
+    justify-content: justify;
+    text-align: justify;
+    color: var(--dark-purple);
+}
+
+#depoimento .barra{
+    top: 10.625rem;
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: var(--light-pink);
+    text-align: center;
+    padding: 0.9375rem;
+    margin-top: 3.75rem;
+}
+
+footer img{
+    width: 3.125rem;
+    height: auto
+}
+
+footer a, p{
+    text-decoration: none;
+    color: var(--dark-purple);
+}
+
+.footer-texto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2.5rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* Media queries */
+
+@media (max-width: 50rem) {
+    #header-mobile{
+        display: block;
+    }
+
+    #header-mobile img{
+        margin-left: 90%;
+    }
+
+    .background{
+        height: 100%;
+        width: 100%;
+        position: unset;
+    }
+
+    #header{
+        display: none;
+    }
+
+    h1{
+        font-size: 1.875rem;
+        padding: 0rem;
+        margin: 1.875rem 1.25rem 1.875rem 1.25rem;
+    }
+    
+    #jumbo-pic{
+        width: 100%;
+        height: auto;
+        padding-top: 3.75rem;
+        margin: 0 auto;
+    }
+    
+    #jumbo-logo{
+        margin-left: 15%;
+        position: unset;
+        transform: none;
+        height: 5rem;
+    }
+    
+    .jumbo-logo{
+        width: 5rem;
+        height: auto;
+    }
+    
+    #jumbo-logo h1{
+        font-size: 3.125rem;
+    }
+    
+    .frase-jumbo{
+        padding: 1.25rem 0rem 1.25rem 0rem;
+        font-size: 1.125rem;
+        width: 90%;
+    }
+    
+    .barra{
+        display: none;
+    }
+    
+    #programas h1{
+        margin-bottom: 1.875rem;
+    }
+
+    .flex-programas{
+        flex-direction: column;
+    }
+    
+    .programas{
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        padding-bottom: 1.25rem;
+    }
+
+    .programas p{
+        font-size: 0.9375rem;
+    }
+    
+
+    .video{
+        position: unset;
+        text-align: center;
+    }
+
+    iframe{
+        width: 90%;
+        height: 13rem;
+    }
+
+    .signup-header{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+    .signup-header h3{
+        font-size: 1.125rem;
+        width: 90%;
+    }
+
+
+    fieldset{
+        width: 80%;
+        padding: 0.625rem 0.625rem 1.25rem 0.625rem;
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+
+    fieldset h2{
+        margin: 0.625rem 0rem 0.625rem 0rem;
+    }
+
+    .form{
+        width: 100%;
+    }
+
+    .form-grid{
+        display: block;
+    }
+
+    input{
+        margin-top: 0.625rem;
+        width: 100%;
+    }
+
+    .depoimento-flex{
+        width: 80%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .depoimento-flex img{
+        display: none;
+    }
+
+    .depoimento-flex h3{
+        font-size: 1.125rem;
+        padding: 1.25rem;
+    }
+
+    footer{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding: 0rem;
+        margin: 1.25rem 0rem 0rem 0rem;
+    }
+
+    .footer-texto{
+        display: block;
+        width: 100%;
+        padding: 0.625rem;
+        margin-bottom: 0.3125rem;
+    }
+
+}
